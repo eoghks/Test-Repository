@@ -62,6 +62,7 @@ public class InterpreterTest {
 		Expression subExpression = new OrExpression(man1, man2);
 		return new OrExpression(man1, subExpression);
 	}
+
 	public static Expression getMarriedMaleExpression() {
 		Expression surname = new TerminalExpression("이");
 		Expression givenName = new TerminalExpression("대환");
