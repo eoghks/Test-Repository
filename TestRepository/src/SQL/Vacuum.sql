@@ -3,3 +3,6 @@ select name,setting from pg_settings where name in ('autovacuum_vacuum_scale_fac
 
 -- autovacuum(Anti Wraparound)관련 파라미터 조회
 select name,setting from pg_settings where name like '%freeze%' and name not like '%mul%';
+
+-- autovacuum(Multixact Anti Wraparound)관련 파라미터 조회
+select name,setting from pg_settings where name like '%freeze%' and name like '%mul%';
